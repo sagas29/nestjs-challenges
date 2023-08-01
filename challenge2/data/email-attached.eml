@@ -1,0 +1,155 @@
+Delivered-To: guada6190@gmail.com
+Received: by 2002:a98:cccd:0:b0:1ce:b8c6:19c with SMTP id v13csp1127127eio;
+        Sat, 29 Jul 2023 12:24:10 -0700 (PDT)
+X-Received: by 2002:a81:bf44:0:b0:579:e318:4c01 with SMTP id s4-20020a81bf44000000b00579e3184c01mr5181690ywk.19.1690658650581;
+        Sat, 29 Jul 2023 12:24:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1690658650; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Yxs/nhU9m5ToYA7bdbaCfjPTp9m1IwTbAhtaVi484yULcng7VhqBivz1M2ot0QeaGb
+         cj12JKXqeiJif4kw+1l39M4NTBn/qKGnaSYbuBfNviVhA5hcotN4d8tG852Ajm+cNe4x
+         Fdx3sraTpvvdF+hIFhaAJuXMzjpV3ctgHVvaF3ATPVWhhf0ljNsrPAo+wpWwB/fp3wxA
+         w5BOEbMPi2Yh6yh+5lmoMxdlKK/rSO8CAkF6g4v06XB0S2GC3MAtoV0hPOPIs1eloqmc
+         ABqnSmCNXdazf6YXHY4RU2IRPOHZheeQH/R4C7T6ZKKnKFfWaNskL+CAVwysv25hav30
+         bLdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=7co6ZrW8iTWrLlBIvF40EI6w0EyWXwFiq4hX8gP+9pY=;
+        fh=Pqt59VIg58W2eWXELmhqRh4q4E4Mv5hbrOm8AxUgyqw=;
+        b=tu8XDmPMFmX8lKqwLlIjy9DzinLd9lTTxON46x0SBJMj4FUOzoW11P9nVBeqmKPAbU
+         b8ZjBSIr60ajTEV8gJka+qBNwvpG+7F5Iw4ETncJPPGe4dz1kByL1JBuBkYWnwmjZCDu
+         pKfw0CJSwLaNyHFLcKHbXchvnNcWFGToF4uZHk3UnOIwR+3Wh6+UTk4pNw6Rt1A4hh97
+         OSExJX1/Srpmaz1OaUTj6mEYNmdgVdncQcAj1gsVLB5EUmb70L2Vp2Zywt73lpMYO5oF
+         cCasU6NsuKsrPiggrsdRV3XtV6XgY2QG7oEzAws7VGpa/WlsVHH4sc2AshaFewf9O2kR
+         kelQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=Ql6Ynsly;
+       spf=pass (google.com: domain of sagastumelup29@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sagastumelup29@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <sagastumelup29@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d3-20020a0ddb03000000b0058314f7638bsor2221015ywe.7.2023.07.29.12.24.10
+        for <guada6190@gmail.com>
+        (Google Transport Security);
+        Sat, 29 Jul 2023 12:24:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sagastumelup29@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=Ql6Ynsly;
+       spf=pass (google.com: domain of sagastumelup29@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sagastumelup29@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1690658650; x=1691263450;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=7co6ZrW8iTWrLlBIvF40EI6w0EyWXwFiq4hX8gP+9pY=;
+        b=Ql6YnslyibOZW1yQCKht7f2ocKdd24AsQ5LCk8hvED2DJr+fXrHEIxHnChBEkuB9r6
+         tXfCJDRXPRzYnxkZ8LUN+Ljx5gIncrKDw3kGeUxSm/YnB8M5NuFrs2B84PF8rk/S4zaw
+         xGVgCdPJQbG35YwtBVyFNV0ZWTj4+rVX1O9fl5g3W4W+5eLIChVV4ASgEf1G7V0IR9j5
+         qR7KA52osV1VvBckVWWvJ8xP8kkMLzFqYVTj21eaIyxc+VkIikMGt9ZzGhq87wXGi1Wc
+         Y6Ct9RioSIilHAYqoYgQ8xfYEo0wKXzVRnbOJbYjxmOml5CZNOiwaUpfEV+hW3nQ+7oa
+         YdDQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1690658650; x=1691263450;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=7co6ZrW8iTWrLlBIvF40EI6w0EyWXwFiq4hX8gP+9pY=;
+        b=O26oU2uIxnfP57Wjig8sAnMlUZUXObeRLV0EIvIxe1roA83I1EQzaF8cbo621eNaZ/
+         LOEyeklnpm+EGn++vZOfCZX5CHPAXYpalQX34v3dwCR6lrHprwuS6H/D9Rl4/77e8afT
+         f+6j7I4F0ZKL0ccYpdn9mABlIW4BwbZkHl5xQmJ03MsDrWzPSS6we4k0prbzsIgRDUNB
+         Rj0yIqdNseNUwz1PdJkvC5IWqP0GVzCphZ8qnkHD4O6rSkgxyG7OlMclxwmGprldBboX
+         HQNtq40+5MsLf8Pg1NNbIwi/QjI4xliabqYV9macJx/62n9D/x8YQcOMnGPmyprUQDcL
+         v9Ig==
+X-Gm-Message-State: ABy/qLbcz8Shs8tHQjaMT9Zrt4C3wK8kN23GznR/qhYQd1akSPNHNddB
+	rvYooDdhJU1MJMSZV6SEUBb6y8YWrk82pahkwBd3o95u
+X-Google-Smtp-Source: APBJJlExtXXRfWjnxUgpuWJal2OV1COfaW3UGB7b2S2uguNLtCS8ihyFgYf542WGC0hfl9swZxzGeJlzd7oknbpVDAo=
+X-Received: by 2002:a81:6ac2:0:b0:56d:31bb:7388 with SMTP id
+ f185-20020a816ac2000000b0056d31bb7388mr6084492ywc.49.1690658649843; Sat, 29
+ Jul 2023 12:24:09 -0700 (PDT)
+MIME-Version: 1.0
+From: Jesus Sagastume <sagastumelup29@gmail.com>
+Date: Sat, 29 Jul 2023 13:23:57 -0600
+Message-ID: <CAOKkEkoG-FeuKch2Jo28mqg9Ob+f9VCW5R4box5Hcu74HqL04g@mail.gmail.com>
+Subject: urgents response in this attatched json
+To: guada6190@gmail.com
+Content-Type: multipart/mixed; boundary="00000000000042e3fd0601a52475"
+
+--00000000000042e3fd0601a52475
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000042e3fd0601a52475
+Content-Type: application/json; name="data.json"
+Content-Disposition: attachment; filename="data.json"
+Content-Transfer-Encoding: base64
+Content-ID: <f_lkoei0b60>
+X-Attachment-Id: f_lkoei0b60
+
+ewogICJSZWNvcmRzIjogWwogICAgewogICAgICAiZXZlbnRWZXJzaW9uIjogIjEuMCIsCiAgICAg
+ICJzZXMiOiB7CiAgICAgICAgInJlY2VpcHQiOiB7CiAgICAgICAgICAidGltZXN0YW1wIjogIjIw
+MTUtMDktMTFUMjA6MzI6MzMuOTM2WiIsCiAgICAgICAgICAicHJvY2Vzc2luZ1RpbWVNaWxsaXMi
+OiAyMjIsCiAgICAgICAgICAicmVjaXBpZW50cyI6IFsKICAgICAgICAgICAgInJlY2lwaWVudEBl
+eGFtcGxlLmNvbSIKICAgICAgICAgIF0sCiAgICAgICAgICAic3BhbVZlcmRpY3QiOiB7CiAgICAg
+ICAgICAgICJzdGF0dXMiOiAiUEFTUyIKICAgICAgICAgIH0sCiAgICAgICAgICAidmlydXNWZXJk
+aWN0IjogewogICAgICAgICAgICAic3RhdHVzIjogIlBBU1MiCiAgICAgICAgICB9LAogICAgICAg
+ICAgInNwZlZlcmRpY3QiOiB7CiAgICAgICAgICAgICJzdGF0dXMiOiAiUEFTUyIKICAgICAgICAg
+IH0sCiAgICAgICAgICAiZGtpbVZlcmRpY3QiOiB7CiAgICAgICAgICAgICJzdGF0dXMiOiAiUEFT
+UyIKICAgICAgICAgIH0sCiAgICAgICAgICAiZG1hcmNWZXJkaWN0IjogewogICAgICAgICAgICAi
+c3RhdHVzIjogIlBBU1MiCiAgICAgICAgICB9LAogICAgICAgICAgImRtYXJjUG9saWN5IjogInJl
+amVjdCIsCiAgICAgICAgICAiYWN0aW9uIjogewogICAgICAgICAgICAidHlwZSI6ICJTTlMiLAog
+ICAgICAgICAgICAidG9waWNBcm4iOiAiYXJuOmF3czpzbnM6dXMtZWFzdC0xOjAxMjM0NTY3ODkx
+MjpleGFtcGxlLXRvcGljIgogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgIm1haWwiOiB7
+CiAgICAgICAgICAidGltZXN0YW1wIjogIjIwMTUtMDktMTFUMjA6MzI6MzMuOTM2WiIsCiAgICAg
+ICAgICAic291cmNlIjogIjYxOTY3MjMwLTdBNDUtNEE5RC1CRUM5LTg3Q0JDRjIyMTFDOUBleGFt
+cGxlLmNvbSIsCiAgICAgICAgICAibWVzc2FnZUlkIjogImQ2aWl0b2JrNzV1cjQ0cDhrZG5ucDdn
+Mm44MDAiLAogICAgICAgICAgImRlc3RpbmF0aW9uIjogWwogICAgICAgICAgICAicmVjaXBpZW50
+QGV4YW1wbGUuY29tIgogICAgICAgICAgXSwKICAgICAgICAgICJoZWFkZXJzVHJ1bmNhdGVkIjog
+ZmFsc2UsCiAgICAgICAgICAiaGVhZGVycyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAg
+ICJuYW1lIjogIlJldHVybi1QYXRoIiwKICAgICAgICAgICAgICAidmFsdWUiOiAiPDAwMDAwMTRm
+YmUxYzA5Y2YtN2NiOWY3MDQtNzUzMS00ZTUzLTg5YTEtNWZhOTc0NGY1ZWI2LTAwMDAwMEBhbWF6
+b25zZXMuY29tPiIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJu
+YW1lIjogIlJlY2VpdmVkIiwKICAgICAgICAgICAgICAidmFsdWUiOiAiZnJvbSBhOS0xODMuc210
+cC1vdXQuYW1hem9uc2VzLmNvbSAoYTktMTgzLnNtdHAtb3V0LmFtYXpvbnNlcy5jb20gWzU0LjI0
+MC45LjE4M10pIGJ5IGluYm91bmQtc210cC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbSB3aXRoIFNN
+VFAgaWQgZDZpaXRvYms3NXVyNDRwOGtkbm5wN2cybjgwMCBmb3IgcmVjaXBpZW50QGV4YW1wbGUu
+Y29tOyBGcmksIDExIFNlcCAyMDE1IDIwOjMyOjMzICswMDAwIChVVEMpIgogICAgICAgICAgICB9
+LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgIm5hbWUiOiAiREtJTS1TaWduYXR1cmUiLAog
+ICAgICAgICAgICAgICJ2YWx1ZSI6ICJ2PTE7IGE9cnNhLXNoYTI1NjsgcT1kbnMvdHh0OyBjPXJl
+bGF4ZWQvc2ltcGxlOyBzPXVnN25idGY0Z2NjbWxwd2ozMjJheDNwNm93Nnlmc3VnOyBkPWFtYXpv
+bnNlcy5jb207IHQ9MTQ0MjAwMzU1MjsgaD1Gcm9tOlRvOlN1YmplY3Q6TUlNRS1WZXJzaW9uOkNv
+bnRlbnQtVHlwZTpDb250ZW50LVRyYW5zZmVyLUVuY29kaW5nOkRhdGU6TWVzc2FnZS1JRDpGZWVk
+YmFjay1JRDsgYmg9RFdyM0lPbVlXb1hDQTlBUnFHQy9VYU9EZmdoZmZpd0ZOUkliMk1ja3l0ND07
+IGI9cDR1a1VEU0ZxaHFpdWIrelBSMERXMWtwN29KWmFrcnp1cHI2TEJlNnNVdXZxcEJraWc1NlV6
+VXdjMjlyRmJKRiBobFgzT3Y3RGVZVk5vTjM4c3Rxd3NGOGl2Y2FqWHBRc1hSQzFjVzl6OHg4NzVK
+MDQxckNsQWpWN0VHYkxtdWRWcFBYIDRoSHN0MVhQeVg1d21nZEhJaG1VdWg4b1pLcFZxR2k2YkhH
+enpmN2c9IgogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgIm5hbWUi
+OiAiRnJvbSIsCiAgICAgICAgICAgICAgInZhbHVlIjogInNlbmRlckBleGFtcGxlLmNvbSIKICAg
+ICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJuYW1lIjogIlRvIiwKICAg
+ICAgICAgICAgICAidmFsdWUiOiAicmVjaXBpZW50QGV4YW1wbGUuY29tIgogICAgICAgICAgICB9
+LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgIm5hbWUiOiAiU3ViamVjdCIsCiAgICAgICAg
+ICAgICAgInZhbHVlIjogIkV4YW1wbGUgc3ViamVjdCIKICAgICAgICAgICAgfSwKICAgICAgICAg
+ICAgewogICAgICAgICAgICAgICJuYW1lIjogIk1JTUUtVmVyc2lvbiIsCiAgICAgICAgICAgICAg
+InZhbHVlIjogIjEuMCIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAg
+ICJuYW1lIjogIkNvbnRlbnQtVHlwZSIsCiAgICAgICAgICAgICAgInZhbHVlIjogInRleHQvcGxh
+aW47IGNoYXJzZXQ9VVRGLTgiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAg
+ICAgICAibmFtZSI6ICJDb250ZW50LVRyYW5zZmVyLUVuY29kaW5nIiwKICAgICAgICAgICAgICAi
+dmFsdWUiOiAiN2JpdCIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAg
+ICJuYW1lIjogIkRhdGUiLAogICAgICAgICAgICAgICJ2YWx1ZSI6ICJGcmksIDExIFNlcCAyMDE1
+IDIwOjMyOjMyICswMDAwIgogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAg
+ICAgIm5hbWUiOiAiTWVzc2FnZS1JRCIsCiAgICAgICAgICAgICAgInZhbHVlIjogIjw2MTk2NzIz
+MC03QTQ1LTRBOUQtQkVDOS04N0NCQ0YyMjExQzlAZXhhbXBsZS5jb20+IgogICAgICAgICAgICB9
+LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgIm5hbWUiOiAiWC1TRVMtT3V0Z29pbmciLAog
+ICAgICAgICAgICAgICJ2YWx1ZSI6ICIyMDE1LjA5LjExLTU0LjI0MC45LjE4MyIKICAgICAgICAg
+ICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJuYW1lIjogIkZlZWRiYWNrLUlEIiwK
+ICAgICAgICAgICAgICAidmFsdWUiOiAiMS51cy1lYXN0LTEuS3J2MkZLcEZkV1YrS1VZdzNRZDZ3
+Y3BQSjRTdi9wT1BwRVBTSG4ydTJvND06QW1hem9uU0VTIgogICAgICAgICAgICB9CiAgICAgICAg
+ICBdLAogICAgICAgICAgImNvbW1vbkhlYWRlcnMiOiB7CiAgICAgICAgICAgICJyZXR1cm5QYXRo
+IjogIjAwMDAwMTRmYmUxYzA5Y2YtN2NiOWY3MDQtNzUzMS00ZTUzLTg5YTEtNWZhOTc0NGY1ZWI2
+LTAwMDAwMEBhbWF6b25zZXMuY29tIiwKICAgICAgICAgICAgImZyb20iOiBbCiAgICAgICAgICAg
+ICAgInNlbmRlckBleGFtcGxlLmNvbSIKICAgICAgICAgICAgXSwKICAgICAgICAgICAgImRhdGUi
+OiAiRnJpLCAxMSBTZXAgMjAxNSAyMDozMjozMiArMDAwMCIsCiAgICAgICAgICAgICJ0byI6IFsK
+ICAgICAgICAgICAgICAicmVjaXBpZW50QGV4YW1wbGUuY29tIgogICAgICAgICAgICBdLAogICAg
+ICAgICAgICAibWVzc2FnZUlkIjogIjw2MTk2NzIzMC03QTQ1LTRBOUQtQkVDOS04N0NCQ0YyMjEx
+QzlAZXhhbXBsZS5jb20+IiwKICAgICAgICAgICAgInN1YmplY3QiOiAiRXhhbXBsZSBzdWJqZWN0
+IgogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfSwKICAgICAgImV2ZW50U291cmNlIjogImF3
+czpzZXMiCiAgICB9CiAgXQp9
+--00000000000042e3fd0601a52475--

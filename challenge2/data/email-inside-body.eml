@@ -1,0 +1,20 @@
+MIME-Version: 1.0
+Date: Sun, 30 Jul 2023 08:05:38 -0600
+Message-ID: <CALKKnT74OxeyVnkfBa_+Q6SxmPzk5OxMSP_EodfgbjMpbjNF6Q@mail.gmail.com>
+Subject: JSON-inside-body-email
+From: Jesus Sagastume <guada6190@gmail.com>
+To: Jesus Sagastume <guada6190@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000001f5eff0601b4cf40"
+
+--0000000000001f5eff0601b4cf40
+Content-Type: text/plain; charset="UTF-8"
+
+Here is the link:
+https://raw.githubusercontent.com/sagas29/utils-random/main/ses-sns-event.json
+
+--0000000000001f5eff0601b4cf40
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">Here is the link:<br><a href="https://raw.githubusercontent.com/sagas29/utils-random/main/ses-sns-event.json">https://raw.githubusercontent.com/sagas29/utils-random/main/ses-sns-event.json</a><br></div>
+
+--0000000000001f5eff0601b4cf40--
