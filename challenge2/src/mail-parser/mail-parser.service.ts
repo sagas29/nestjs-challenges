@@ -7,7 +7,7 @@ import { AxiosService, findUrls } from '../utils';
 export class MailParserService {
   constructor(private readonly axiosService: AxiosService) {}
 
-  async getJSON(path: string) {
+  async getJSON(path: string): Promise<any> {
     const isUrl = path.startsWith('http');
     let emailData = null;
     if (isUrl) {
@@ -51,9 +51,6 @@ export class MailParserService {
         }
       }
     }
-
-    return {
-      error: 'No JSON file found',
-    };
+    throw new Error("Couldn't find JSON file.");
   }
 }
