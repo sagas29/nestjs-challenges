@@ -1,5 +1,5 @@
 
-# Typescript Challenge
+# Challenges
 
 ## Challenge 1
 
